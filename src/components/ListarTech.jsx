@@ -6,7 +6,6 @@ import Svelte from './icons/Svelte.jsx'
 import Vite from './icons/Vite.jsx'
 
 export default function ListarTech({ tech }) {
-  console.log(tech)
   return (
     <>
       {tech === 'Astro' && (

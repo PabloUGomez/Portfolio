@@ -1,13 +1,25 @@
 import ListarTech from './ListarTech'
 
 export default function ProjectCard({ project }) {
-  const { title, description, imageUrl, tech, year, state, link } = project
-
+  const { id, title, description, imageUrl, tech, year, state, link } = project
+  let rowWrap = ''
+  if (id % 2 === 0) {
+    rowWrap = 'row-reverse;'
+  } else {
+    rowWrap = 'row-wrap;'
+  }
   return (
     <>
-      <div class='col-span-full '>
-        <article class='group relative col-span-full flex  flex-col items-center gap-2 space-y-2 py-12 md:flex-row'>
-          <a href= {link} target="_blank" class='aspect-video max-w-lg overflow-hidden cursor-pointer rounded-xl border bg-muted'>
+      <div class='col-span-full'>
+        <article
+          class='group relative col-span-full flex items-center gap-2 space-y-2 py-12 md:flex-row'
+          style={{ 'flex-direction': rowWrap }}
+        >
+          <a
+            href={link}
+            target='_blank'
+            class='aspect-video max-w-lg overflow-hidden cursor-pointer shadow-lg rounded-xl bg-muted'
+          >
             <img
               alt={title}
               loading='lazy'
@@ -25,12 +37,16 @@ export default function ProjectCard({ project }) {
             <p class='mt-2 flex items-center gap-2 truncate'>
               {title} - {year}
               {state === 'live' && (
-                <a href= {link} target="_blank"  class='max-w-fit truncate rounded-full px-3 py-1 text-sm font-bold uppercase bg-green-500 text-green-800'>
+                <a
+                  href={link}
+                  target='_blank'
+                  class='max-w-fit truncate rounded-full px-3 py-1 text-sm font-bold uppercase bg-green-500 text-green-800'
+                >
                   live
                 </a>
               )}
             </p>
-            <div className="mt-4 flex flex-row gap-x-2 items-center">
+            <div className='mt-4 flex flex-row gap-x-2 items-center'>
               {tech.map((t) => (
                 <ListarTech key={t} tech={t} />
               ))}
