@@ -1,0 +1,40 @@
+---
+const { title, description, imageUrl, state, tech } = Astro.props
+---
+
+<a class='col-span-full cursor-pointer' href='/projects/huma'
+  ><article
+    class='group relative col-span-full flex cursor-pointer flex-col items-center gap-2 space-y-2 py-12 md:flex-row'
+  >
+    <div
+      class='aspect-video max-w-lg overflow-hidden rounded-xl border bg-muted'
+    >
+      <img
+        alt='Huma Legends'
+        fetchpriority='high'
+        width='720'
+        height='405'
+        decoding='async'
+        data-nimg='1'
+        class='transition-transform ease-out group-hover:scale-110'
+        style='color:transparent'
+        srcset='/_next/image?url=%2Fimages%2Fblog%2Fhuma%2Fcover.jpg&w=750&q=75 1x, /_next/image?url=%2Fimages%2Fblog%2Fhuma%2Fcover.jpg&w=1920&q=75 2x'
+        src='/_next/image?url=%2Fimages%2Fblog%2Fhuma%2Fcover.jpg&w=1920&q=75'
+      />
+    </div><div
+      class='inset-x-0 bottom-0 w-full bg-gradient-to-t to-transparent p-6'
+    >
+      <h2 class='text-xl font-extrabold text-white md:text-2xl'>
+        A Visual Journey Through Stories from Around the World
+      </h2><p class='mt-2 flex items-center gap-2 truncate'>
+        Spotify Clone - 2024<span
+          class='max-w-fit truncate rounded-full px-3 py-1 text-sm font-bold uppercase bg-green-500 text-green-800'
+          >live</span
+        ><span
+          class='max-w-fit truncate rounded-full px-3 py-1 text-sm font-bold uppercase border bg-white/10'
+          >mvp</span
+        >
+      </p>
+    </div>
+  </article></a
+>

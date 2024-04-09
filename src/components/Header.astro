@@ -1,28 +1,37 @@
 ---
-import SocialPill from "@/components/SocialPill.astro"
-import GitHubIcon from "@/components/icons/GitHub.astro"
-import LinkedInIcon from "@/components/icons/LinkedIn.astro"
-import MailIcon from "@/components/icons/Mail.astro"
+import SocialItem from '@/components/SocialItem.astro'
+import GitHubIcon from '@/components/icons/GitHub.astro'
+import LinkedInIcon from '@/components/icons/LinkedIn.astro'
+import Discord from '@/components/icons/Discord.astro'
+import Instagram from '@/components/icons/Instagram.astro'
 ---
 
-<header class="flex items-center mt-16 w-full">
-  <img src="/fotoPerfil.jpg" alt="Pablo foto" class="w-52 rounded-full mr-6" />
-  <span>
-    <h1 class="text-4xl">Hey, I'm Pablo</h1>
-    <h2 >Front End Web Developer based in Puan, Argentina.</h2>
-    <nav class="flex gap-4 mt-8 flex-wrap">
-      <SocialPill href="https://linkedin.com/in/midudev">
-        <LinkedInIcon class="size-4 md:size-6" />
-        LinkedIn
-      </SocialPill>
-      <SocialPill href="https://github.com/midudev">
-        <GitHubIcon class="size-4 md:size-6" />
-        GitHub
-      </SocialPill>
-      <SocialPill href="mailto:miduga@gmail.com">
-        <MailIcon class="size-4 md:size-6" />
-        pablogomez0430@gmail.com
-      </SocialPill>
-    </nav>
-  </span>
+<header class='flex mt-10 flex-col items-center text-center mb-16 max-w-4xl'>
+  <h1 class='text-8xl py-16 font-bold flex flex-col gap-4'>
+    Hey, i'm <span class='text-sky-200 shadow-xl'>PABLO</span>
+  </h1>
+  <h2 class='text-balance text-xl'>
+    <span class='font-semibold text-amber-200 shadow-lg'
+      >Front End Web Developer</span
+    > based in Argentina. Always learning about new paradigms and technologies to
+    apply right solution in the right place.
+  </h2>
+  <nav class='flex gap-4 mt-16 flex-col'>
+    <span class='flex flex-row justify-center gap-x-6'>
+      <SocialItem href='https://discord.com/users/459063656785903638'>
+        <Discord />
+      </SocialItem>
+      <SocialItem href='https://www.instagram.com/pablex.g/'>
+        <Instagram />
+      </SocialItem>
+    </span>
+    <span class='flex flex-row gap-x-2'>
+      <SocialItem href='https://www.linkedin.com/in/pablo-gomez-460971258/'
+        ><LinkedInIcon /></SocialItem
+      >
+      <SocialItem href='https://github.com/PabloUGomez'
+        >GitHub<GitHubIcon /></SocialItem
+      >
+    </span>
+  </nav>
 </header>
