@@ -10,7 +10,7 @@ export default function Footer() {
             <p>Cooked with love in</p>
             <img
               class='size-5 rounded-full'
-              src='./argIcon.png'
+              src='/argIcon.png'
               alt='Bandera de Argentina'
             />
             with{' '}

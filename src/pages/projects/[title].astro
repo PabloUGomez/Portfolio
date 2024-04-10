@@ -1,0 +1,14 @@
+---
+import { projects } from '@/store/projects'
+import Layout from '@/layouts/Layout.astro'
+import Page404 from '@/components/404.astro'
+import ProjectPage from '@/components/ProjectPage.astro'
+
+const { title } = Astro.params
+const project = projects.find((project) => project.title === title)
+
+---
+
+<Layout title={project ? project.title : 'Not Found'}>
+    {project ? <ProjectPage project={project} /> : <Page404 />}
+</Layout>

@@ -16,8 +16,7 @@ export default function ProjectCard({ project }) {
           style={{ 'flex-direction': rowWrap }}
         >
           <a
-            href={link}
-            target='_blank'
+            href={`/projects/${title}`}
             class='aspect-video max-w-lg overflow-hidden cursor-pointer shadow-lg rounded-xl bg-muted'
           >
             <img
