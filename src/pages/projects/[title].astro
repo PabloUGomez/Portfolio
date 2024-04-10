@@ -1,8 +1,8 @@
 ---
-import { projects } from '@/store/projects'
-import Layout from '@/pages/Layout.astro'
-import Page404 from '@/pages/404.astro'
-import ProjectPage from '@/pages/ProjectPage.astro'
+import { projects } from '../../store/projects'
+import Layout from '../Layout.astro'
+import Page404 from '../404.astro'
+import ProjectPage from '../ProjectPage.astro'
 
 const { title } = Astro.params
 const project = projects.find((project) => project.title === title)
