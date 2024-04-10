@@ -1,9 +1,9 @@
-import Astro from './icons/Astro.jsx'
-import React from './icons/React.jsx'
-import Tailwind from './icons/Tailwind.jsx'
-import TypeScript from './icons/TypeScript.jsx'
-import Svelte from './icons/Svelte.jsx'
-import Vite from './icons/Vite.jsx'
+import Astro from '../components/icons/Astro.jsx'
+import React from '../components/icons/React.jsx'
+import Tailwind from '../components/icons/Tailwind.jsx'
+import TypeScript from '../components/icons/TypeScript.jsx'
+import Svelte from '../components/icons/Svelte.jsx'
+import Vite from '../components/icons/Vite.jsx'
 
 export default function ListarTech({ tech }) {
   return (

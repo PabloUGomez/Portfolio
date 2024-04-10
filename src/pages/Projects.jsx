@@ -1,5 +1,5 @@
 import { projects } from '@/store/projects'
-import ProjectCard from '@/components/ProjectCard'
+import ProjectCard from '@/pages/ProjectCard'
 
 export default function Projects() {
   return (
