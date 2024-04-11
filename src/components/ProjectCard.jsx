@@ -12,7 +12,7 @@ export default function ProjectCard({ project }) {
     <>
       <div class='col-span-full'>
         <article
-          class='group relative col-span-full flex items-center gap-2 space-y-2 py-12 md:flex-row'
+          class='group relative flex-col col-span-full flex items-center gap-2 space-y-2 py-12 md:flex-row flex-wrap md:flex-nowrap'
           style={{ 'flex-direction': rowWrap }}
         >
           <a

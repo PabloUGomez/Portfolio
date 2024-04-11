@@ -6,9 +6,12 @@ import ProjectPage from '@/components/ProjectPage.astro'
 
 const { title } = Astro.params
 const project = projects.find((project) => project.title === title)
+console.log('project', project);
 
 ---
 
 <Layout title={project ? project.title : 'Not Found'}>
-    {project ? <ProjectPage project={project} /> : <Page404 />}
+    <main class="flex flex-col items-center">
+        {project ? <ProjectPage project={project} /> : <Page404 />}
+    </main>
 </Layout>
