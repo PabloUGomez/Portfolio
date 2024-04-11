@@ -1,14 +1,15 @@
 ---
 import { projects } from '../../store/projects'
-import Layout from '../Layout.astro'
-import Page404 from '../404.astro'
-import ProjectPage from '../ProjectPage.astro'
+import Layout from '../components/Layout.astro'
+import Page404 from '../components/404.astro'
+import ProjectPage from '../components/ProjectPage.astro'
 
 const { title } = Astro.params
 const project = projects.find((project) => project.title === title)
-
 ---
 
 <Layout title={project ? project.title : 'Not Found'}>
+  <main class='flex flex-col items-center'>
     {project ? <ProjectPage project={project} /> : <Page404 />}
+  </main>
 </Layout>

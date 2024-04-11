@@ -1,4 +1,4 @@
-import { projects } from '../store/projects'
+import { projects } from '../../store/projects'
 import ProjectCard from './ProjectCard'
 
 export default function Projects() {

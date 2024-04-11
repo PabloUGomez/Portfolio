@@ -4,6 +4,7 @@ import Tailwind from './Tailwind.jsx'
 import TypeScript from './TypeScript.jsx'
 import Svelte from './Svelte.jsx'
 import Vite from './Vite.jsx'
+import JavaScript from './JavaScript.jsx'
 
 export default function ListarTech({ tech }) {
   return (
@@ -36,6 +37,11 @@ export default function ListarTech({ tech }) {
       {tech === 'Vite' && (
         <span className='rounded-lg p-1 hover:bg-white/25'>
           <Vite class='size-7' />
+        </span>
+      )}
+      {tech === 'JavaScript' && (
+        <span className='rounded-lg p-1 hover:bg-white/25'>
+          <JavaScript class='size-7' />
         </span>
       )}
     </>
