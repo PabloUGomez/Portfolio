@@ -5,8 +5,8 @@ export const projects = [
     description: 'Experience the Spotify clone: real-time music playback.',
     fullDescription:
       ' Explore the Spotify clone, boasting full graphical interface alongside core functionalities: seamless music playback, adjustable volumecontrols, and the option to mute. Enjoy an immersive music experiencewith a familiar interface.',
-    imageUrl: '/spotifyClone2.png',
-    imageUrl2: '/spotifyClone.png',
+    imageUrl: '/spotifyClone2.webp',
+    imageUrl2: '/spotifyClone.webp',
     state: 'live',
     currentState: 'I´m currently testing with custom playlists.',
     year: '2024',
@@ -25,8 +25,8 @@ export const projects = [
     title: 'Typing Game',
     description:
       'Test your speed and accuracy against the clock or word limits.',
-    imageUrl: '/TypeGame.png',
-    imageUrl2: '/TypeGame2.png',
+    imageUrl: '/TypeGame.webp',
+    imageUrl2: '/TypeGame2.webp',
     state: 'live',
     year: '2024',
     tech: ['Astro', 'JavaScript', 'Tailwind'],
@@ -42,8 +42,8 @@ export const projects = [
     title: 'Tesla Clone',
     description:
       'Experience the Tesla clone: with screen slide, animations, and video background.',
-    imageUrl: '/teslaClone.png',
-    imageUrl2: '/teslaClone2.png',
+    imageUrl: '/teslaClone.webp',
+    imageUrl2: '/teslaClone2.webp',
     state: 'live',
     year: '2023',
     tech: ['Astro', 'Tailwind'],
@@ -59,8 +59,8 @@ export const projects = [
     title: 'Npm Router Package',
     description:
       'A simple router package for npm, with a focus on performance.',
-    imageUrl: '/routerPackage.png',
-    imageUrl2: '/routerPackage2.png',
+    imageUrl: '/routerPackage.webp',
+    imageUrl2: '/routerPackage2.webp',
     state: 'npm package',
     year: '2024',
     tech: ['JavaScript', 'TypeScript'],
