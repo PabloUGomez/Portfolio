@@ -10,9 +10,9 @@ export default function ProjectCard({ project }) {
   }
   return (
     <>
-      <div class='col-span-full'>
+      <div class='col-span-full hover:bg-slate-900/50 md:px-10 rounded-lg '>
         <article
-          class='group relative flex-col col-span-full flex items-center gap-2 space-y-2 py-12 md:flex-row flex-wrap md:flex-nowrap'
+          class='group relative flex-col col-span-full flex items-center justify-center gap-2 space-y-2 py-12 md:flex-row flex-wrap md:flex-nowrap'
           style={{ 'flex-direction': rowWrap }}
         >
           <a

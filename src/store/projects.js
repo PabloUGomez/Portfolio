@@ -22,18 +22,20 @@ export const projects = [
   },
   {
     id: 2,
-    title: 'Npm Router Package',
-    description: 'A simple router package for npm, with a focus on performance.',
-    imageUrl: '/routerPackage.png',
-    imageUrl2: '/routerPackage2.png',
-    state: 'npm package',
+    title: 'Typing Game',
+    description:
+      'Test your speed and accuracy against the clock or word limits.',
+    imageUrl: '/TypeGame.png',
+    imageUrl2: '/TypeGame2.png',
+    state: 'live',
     year: '2024',
-    tech: ['JavaScript', 'TypeScript'],
-    link: 'https://www.npmjs.com/package/pablo-router',
-    publishDate: 'Published on April 1, 2024',
-    currentState: 'This project is currently finished, following the idea of ​​creating a simple router package for npm, with a focus on performance.',
+    tech: ['Astro', 'JavaScript', 'Tailwind'],
+    link: 'https://typing-game-tau-two.vercel.app/',
+    publishDate: 'Published on April 14, 2024',
+    currentState:
+      'This project is currently finished, following the idea of ​​making a type game similar to MonkeyType.',
     fullDescription:
-      'Explore the router package, a simple npm package with a focus on performance. The package is designed to be lightweight and easy to use, allowing developers to quickly and easily implement routing in their projects.',
+    'Experience the ultimate typing challenge on our web platform! Test your speed and accuracy against the clock or word limits. Track your words per minute and precision as you aim for mastery.',
   },
   {
     id: 3,
@@ -47,8 +49,26 @@ export const projects = [
     tech: ['Astro', 'Tailwind'],
     link: 'https://tesla-clon-silk.vercel.app/',
     publishDate: 'Published on April 12, 2024',
-    currentState: 'This project is currently finished, following the idea of ​​making the landing page of Tesla',
+    currentState:
+      'This project is currently finished, following the idea of ​​making the landing page of Tesla',
     fullDescription:
       'Explore the Tesla clone, boasting full graphical interface alongside core functionalities: seamless screen slide, animations, and video background. Enjoy an immersive experience with a familiar interface.',
+  },
+  {
+    id: 4,
+    title: 'Npm Router Package',
+    description:
+      'A simple router package for npm, with a focus on performance.',
+    imageUrl: '/routerPackage.png',
+    imageUrl2: '/routerPackage2.png',
+    state: 'npm package',
+    year: '2024',
+    tech: ['JavaScript', 'TypeScript'],
+    link: 'https://www.npmjs.com/package/pablo-router',
+    publishDate: 'Published on April 1, 2024',
+    currentState:
+      'This project is currently finished, following the idea of ​​creating a simple router package for npm, with a focus on performance.',
+    fullDescription:
+      'Explore the router package, a simple npm package with a focus on performance. The package is designed to be lightweight and easy to use, allowing developers to quickly and easily implement routing in their projects.',
   },
 ]
