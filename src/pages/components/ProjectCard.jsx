@@ -1,5 +1,5 @@
 import ListarTech from './ListarTech'
-
+import '../animations/proyect.css'
 export default function ProjectCard({ project }) {
   const { id, title, description, imageUrl, tech, year, state, link } = project
   let rowWrap = ''
@@ -10,7 +10,7 @@ export default function ProjectCard({ project }) {
   }
   return (
     <>
-      <div class='col-span-full hover:bg-slate-900/50 md:px-10 rounded-lg '>
+      <div class='col-span-full hover:bg-slate-900/50 md:px-10 rounded-lg' id='proyectImg'>
         <article
           class='group relative flex-col col-span-full flex items-center justify-center gap-2 space-y-2 py-12 md:flex-row flex-wrap md:flex-nowrap'
           style={{ 'flex-direction': rowWrap }}
