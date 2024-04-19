@@ -22,6 +22,23 @@ export const projects = [
   },
   {
     id: 2,
+    title: 'Weather App',
+    description:
+      'Check the weather in real time, with a focus on performance.',
+    imageUrl: '/weather.webp',
+    imageUrl2: '/weather2.webp',
+    state: 'building',
+    year: '2024',
+    tech: ['NextJs','React', 'TypeScript', 'Tailwind'],
+    link: 'Building...',
+    publishDate: 'Published on April 19, 2024',
+    currentState:
+      'This project is currently in progress, following the idea of ​​creating a weather app with a focus on performance.',
+    fullDescription:
+    'Check the weather in real time with our web platform! Our weather app is designed with a focus on performance, providing you with up-to-date weather information in a clean and easy-to-use interface. Stay informed and plan your day with our weather app.',
+  },
+  {
+    id: 3,
     title: 'Typing Game',
     description:
       'Test your speed and accuracy against the clock or word limits.',
@@ -38,7 +55,7 @@ export const projects = [
     'Experience the ultimate typing challenge on our web platform! Test your speed and accuracy against the clock or word limits. Track your words per minute and precision as you aim for mastery.',
   },
   {
-    id: 3,
+    id: 4,
     title: 'Tesla Clone',
     description:
       'Experience the Tesla clone: with screen slide, animations, and video background.',
@@ -46,7 +63,7 @@ export const projects = [
     imageUrl2: '/teslaClone2.webp',
     state: 'live',
     year: '2023',
-    tech: ['Astro', 'Tailwind'],
+    tech: ['Astro','JavaScript', 'Tailwind'],
     link: 'https://tesla-clon-silk.vercel.app/',
     publishDate: 'Published on April 12, 2024',
     currentState:
@@ -55,7 +72,7 @@ export const projects = [
       'Explore the Tesla clone, boasting full graphical interface alongside core functionalities: seamless screen slide, animations, and video background. Enjoy an immersive experience with a familiar interface.',
   },
   {
-    id: 4,
+    id: 5,
     title: 'Npm Router Package',
     description:
       'A simple router package for npm, with a focus on performance.',

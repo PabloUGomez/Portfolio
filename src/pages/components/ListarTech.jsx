@@ -5,10 +5,16 @@ import TypeScript from './TypeScript.jsx'
 import Svelte from './Svelte.jsx'
 import Vite from './Vite.jsx'
 import JavaScript from './JavaScript.jsx'
+import NextJs from './NextJs.jsx'
 
 export default function ListarTech({ tech }) {
   return (
     <>
+      {tech === 'NextJs' && (
+        <span className='rounded-lg p-1 hover:bg-white/25'>
+          <NextJs />
+        </span>
+      )}
       {tech === 'Astro' && (
         <span className='rounded-lg p-1 hover:bg-white/25'>
           <Astro class='size-7' />

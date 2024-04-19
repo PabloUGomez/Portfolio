@@ -44,6 +44,28 @@ export default function ProjectCard({ project }) {
                   live
                 </a>
               )}
+              {
+                state === 'npm package' && (
+                  <a
+                    href={link}
+                    target='_blank'
+                    class='max-w-fit truncate rounded-full px-3 py-1 text-sm font-bold uppercase bg-blue-500 text-blue-800'
+                  >
+                    npm package
+                  </a>
+                )
+              }
+              {
+                state === 'building' && (
+                  <a
+                    href={link}
+                    target='_blank'
+                    class='max-w-fit truncate rounded-full px-3 py-1 text-sm font-bold uppercase bg-yellow-500 text-yellow-800'
+                  >
+                    Building
+                  </a>
+                )
+              }
             </p>
             <div className='mt-4 flex flex-row gap-x-2 items-center'>
               {tech.map((t) => (
