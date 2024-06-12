@@ -1,5 +1,5 @@
-import React from './React.jsx'
-import Astro from './Astro.jsx'
+import React from './icons/React.jsx'
+import Astro from './icons/Astro.jsx'
 
 export default function Footer() {
   return(
