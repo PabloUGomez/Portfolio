@@ -21,7 +21,7 @@ export const projects = [
     publishDate: 'Published on June 11, 2024',
     currentState: 'This project is currently finished and live.',
     fullDescription:
-      'Explore the Trello clone, boasting full graphical interface alongside core functionalities: real-time board management, drag-and-drop functionality, and user authentication. Create, edit, and delete boards, list and cards with ease. ',
+      'Explore the Trello clone, boasting full graphical interface alongside core functionalities: real-time board management, drag-and-drop functionality, and user authentication. Create, edit, and delete boards, list and cards with ease.',
 
   },
   {
